@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nametag</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section class="header">
+      <h1 class="site-header">Make a Nametag!</h1>
+    </div>
+    
+    <div class="grid-container">
+      <aside class="sidebar">
+        <h2 class="sidebar-header">This is a sidebar</h2>
+        <ul class="sidebar-list">
+          <li>Great item</li>
+          <li>Awesome item</li>
+          <li>Neat item</li>
+          <li>Stupid item</li>
+          <li>Normal item</li>
+        </ul>
+      </aside>
+      
+      <section class="name-input">
+        <label class="name-input__label">Name: <input type="text" id="nameInput"></label>
+        <label class="pronoun-input__label">Pronouns: <input type="text" class="pronoun-input" id="pronounInput"></label>
+      </section>
+      <button class="name-input__button" id="button">Submit</button>
+
+      <section class="nametag">
+        <div class="paper">
+          <div class="sticker" id="sticker">
+            <h1 class="tag-header">Hello</h1>
+            <h2 class="tag-subheader">my name is</h2>
+            <div class="whitespace">
+              <p class="name" id="nameElement"> </p>
+              <p class="pronouns" id="pronounElement"> </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="customize">
+      <p class="customize-label">Make it pretty!</p>
+      <section class="font-selection">
+        <label class="font-selection__label">Select Font: 
+          <select name="font-selection__input" id="fontSelect">
+            <option value="Arial">Arial</option>
+            <option value="Gill Sans">Gill Sans</option>
+            <option value="Times New Roman">Times New Roman</option>
+          </select>
+        </label>
+      </section>
+
+      <section class="color-selection">
+        <p class="color-selection__label">Select Color:</p>
+        <div class="color-button__blue" id="blue-button"></div>
+        <div class="color-button__green" id="green-button"></div>
+        <div class="color-button__orange" id="orange-button"></div>
+      </section>
+    </section>
+    </div>
+
+    <section class="footer" id="footer"> </section>
+
+    <script src="app.js" type="module"></script>
+  </body>
+</html>
