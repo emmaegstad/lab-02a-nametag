@@ -1,5 +1,3 @@
-//add click counter
-
 let nameElement = document.getElementById('nameElement');
 let pronounElement = document.getElementById('pronounElement');
 let fontSelect = document.getElementById('fontSelect');

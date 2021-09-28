@@ -1,4 +1,4 @@
-/* style sidebar, fix sizing */
+@import url("https://fonts.googleapis.com/css2?family=Creepster&family=Luckiest+Guy&display=swap");
 
 * {
   box-sizing: border-box;
@@ -11,21 +11,25 @@ body {
 .grid-container {
   display: grid;
   grid-gap: 10px;
-  grid-template-columns: 300px 1fr 300px;
+  grid-template-columns: 250px 1fr 250px;
   width: 100%;
 }
 
 .site-header {
   font-size: 4vw;
-  padding-bottom: 8vh;
+  padding-top: 4vh;
+  padding-bottom: 4vh;
   text-align: center;
+  font-weight: bold;
+  font-family: "Luckiest Guy", cursive;
 }
 
 .sidebar {
-  background-color: #e2e2e2;
+  font-family: "Luckiest Guy", cursive;
+  background-color: #f8cace;
   height: auto;
   padding: 10px;
-  border: 2px dotted black;
+  border: 2px dotted #fc0d1c;
   grid-row: 1/5;
 }
 
@@ -35,8 +39,13 @@ body {
 }
 
 .sidebar-list {
-  font-size: 1vw;
-  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  height: 150px;
+  width: 150px;
 }
 
 .nametag {
@@ -70,11 +79,13 @@ body {
 
 .name {
   font-size: 2vw;
+  font-family: cursive;
 }
 
 .pronouns {
   font-size: 1vw;
   text-align: center;
+  font-family: cursive;
 }
 
 .tag-header {
@@ -94,7 +105,6 @@ body {
 }
 
 p {
-  font-family: cursive;
   font-weight: bold;
   font-size: 25px;
 }
@@ -104,7 +114,7 @@ p {
   grid-column: 2/3;
   align-self: center;
   justify-self: center;
-  margin-top: 3vh;
+  margin-top: 2vh;
   height: 50px;
 }
 
@@ -144,7 +154,7 @@ p {
 .pronoun-input__label,
 .font-selection__label,
 .color-selection__label {
-  font-family: Arial, Helvetica, sans-serif;
+  /* font-family: Arial, Helvetica, sans-serif; */
   font-weight: bolder;
   font-size: 15px;
   justify-self: center;
@@ -152,9 +162,8 @@ p {
 }
 
 .name-input__button {
-  font-family: Arial, Helvetica, sans-serif;
   font-weight: bolder;
-  font-size: 15px;
+  font-size: 12px;
   color: white;
   background-color: #fc0d1c;
   border: none;
@@ -163,6 +172,7 @@ p {
   height: 2vw;
   justify-self: center;
   grid-column: 2/3;
+  margin-bottom: 2vh;
 }
 
 .font-selection {
@@ -177,14 +187,16 @@ p {
 }
 
 .customize-label {
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
   height: 3vw;
+  padding-bottom: 4vw;
   text-align: center;
+  font-family: "Luckiest Guy", cursive;
 }
 
 .footer {
-  font-size: 2vw;
+  font-size: 4vw;
   text-align: center;
-  padding-top: 2vw;
+  padding-top: 4vw;
+  font-family: "Luckiest Guy", cursive;
 }
